@@ -22,7 +22,7 @@ else:
     import urllib.parse
 
 cl = LINETCR.LINE()
-cl.login(token="(Isi TOKEN Kamu)")
+cl.login(token="EotJAq856rdNdoWzusK6.d0Y8Z+kWn1tqFy24ChaJ9G.Go1Bx14QYWld4zz7zdWMJTed4GtVx8tL7jJl6c8DEcQ=")
 cl.loginResult()
 
 print "==================[Login Success]==================="
@@ -163,8 +163,8 @@ wait = {
     "wblack":False,
     "dblack":False,
     "clock":False,
-    "cNames":"ই͜✿ই͜Muhammad ই͜Fahmi ই͜Ridhani✿",
-    "cNames":"",
+    "cNames":"[☪1DaffaN3Kalani☪],
+    "cNames":"[☪1DaffaN3Kalani☪],
     "blacklist":{},
     "wblacklist":False,
     "dblacklist":False,
@@ -479,8 +479,8 @@ def bot(op):
                  if wait["detectMention"] == True:
                      contact = cl.getContact(msg.from_)
                      cName = contact.displayName
-                     balas = ["Fahmi Nya Lagi Off Kalau Penting Pc Aja "]
-                     ret_ = "[Auto Respond] " + random.choice(balas)
+                     balas = ["Daffanya Lagi Sibuk jangan Pm mulu Kalau Penting Pm Aja "]
+                     ret_ = "[Heemmm???] " + random.choice(balas)
                      name = re.findall(r'@(\w+)', msg.text)
                      mention = ast.literal_eval(msg.contentMetadata['MENTION'])
                      mentionees = mention['MENTIONEES']
@@ -493,8 +493,8 @@ def bot(op):
                  if wait["kickMention"] == True:
                      contact = cl.getContact(msg.from_)
                      cName = contact.displayName
-                     balas = ["Dont Tag Me!! Im Busy",cName + " Ngapain Ngetag?",cName + " Nggak Usah Tag-Tag! Kalo Penting Langsung Pc Aja","Fahmi Nya lagi off", cName + " Kenapa Tag saya?","SPAM PC aja " + cName, "Jangan Suka Tag gua " + cName, "Kamu siapa " + cName + "?", "Ada Perlu apa " + cName + "?","Tenggelamkan tuh yang suka tag pake BOT","Tersummon -_-"]
-                     ret_ = "[Auto Respond] " + random.choice(balas)
+                     balas = ["Dont Tag Me!! Im Busy",cName + " Ngapain Ngetag?",cName + " Nggak Usah Tag-Tag! Kalo Penting Langsung Pc Aja","Daffanya lagi off", cName + " Kenapa Tag saya?","SPAM PC aja " + cName, "Jangan Suka Tag gua " + cName, "Kamu siapa " + cName + "?", "Ada Perlu apa " + cName + "?","Tenggelamkan tuh yang suka tag pake BOT","Tersummon -_-"]
+                     ret_ = "[Heemmm???] " + random.choice(balas)
                      name = re.findall(r'@(\w+)', msg.text)
                      mention = ast.literal_eval(msg.contentMetadata['MENTION'])
                      mentionees = mention['MENTIONEES']
@@ -631,7 +631,7 @@ def bot(op):
                     cl.sendText(msg.to,msg.text)
             elif msg.text is None:
                 return
-            elif msg.text.lower() == 'selfhelp':
+            elif msg.text.lower() == 'myself':
                 if wait["lang"] == "JP":
                     cl.sendText(msg.to,helpmsg)
                 else:
@@ -924,7 +924,7 @@ def bot(op):
                 cl.sendMessage(msg)
             elif cms(msg.text,["creator","Creator"]):
                 msg.contentType = 13
-                msg.contentMetadata = {'mid': "ud7a8fbcc2af037c2c5bf181b89fda5f7"}
+                msg.contentMetadata = {'mid': "u0f4cbccff2b03754d07d8db8707023f6"}
                 cl.sendMessage(msg)
             elif msg.text.lower() == 'autoadd on':
                 if wait["autoAdd"] == True:
@@ -1116,10 +1116,10 @@ def bot(op):
                 wait["kickMention"] = False
                 cl.sendText(msg.to,"[AUTO RESPOND] Auto Kick yang tag OFF")
 #==============================================================================#
-            elif "らたかn" in msg.text:
+            elif "Combat" in msg.text:
                 if msg.toType == 2:
                     print "ok"
-                    _name = msg.text.replace("らたかn","")
+                    _name = msg.text.replace("Combat","")
                     gs = cl.getGroup(msg.to)
                     targets = []
                     for g in gs.members:
